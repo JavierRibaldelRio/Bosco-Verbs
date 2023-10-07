@@ -1,0 +1,26 @@
+{
+  "name": "irregular-verbs-test-generator",
+  "version": "1.0.0",
+  "description": "A Javascript app to create English irregular verbs tests to be filled in with a pencil",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator.git"
+  },
+  "author": "Javier Ribal del Rio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator/issues"
+  },
+  "homepage": "https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0"
+  }
+}
