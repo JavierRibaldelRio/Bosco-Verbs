@@ -1,8 +1,8 @@
 // Importa React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './style/index.css';
 import reportWebVitals from './reportWebVitals';
 
 // Boostrap y Bootswach
@@ -11,15 +11,19 @@ import "bootswatch/dist/lumen/bootstrap.min.css";
 //
 
 // Componentes
-import App from './pages/App';
-
+import VerbsList from './pages/Verbs-List';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    
-    </BrowserRouter>
+
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/verb-list' element={<VerbsList />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   </React.StrictMode>
 );
 
