@@ -1,7 +1,8 @@
+// Importa React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import Button from 'react-bootstrap/Button';
 import reportWebVitals from './reportWebVitals';
 
 // Boostrap y Bootswach
@@ -10,14 +11,15 @@ import "bootswatch/dist/lumen/bootstrap.min.css";
 //
 
 // Componentes
-import App from './App';
+import App from './pages/App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Button variant='primary' >asdfadsf</Button>
-    <App />
+    <BrowserRouter>
+    
+    </BrowserRouter>
   </React.StrictMode>
 );
 
