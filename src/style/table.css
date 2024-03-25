@@ -1,0 +1,36 @@
+#Tabla-IV{
+    border: solid 2px black;
+
+    max-height: 75vh;
+    
+
+}
+
+#Tabla-IV tr{
+
+    border: 2px black;
+
+    border-top: solid;
+    border-bottom: solid;
+}
+
+#Tabla-IV th, #Tabla-IV td{
+
+    padding:1vmin;
+}
+
+#Tabla-IV tbody{
+    overflow-y: scroll;
+    display: block;
+    height: 75vh;
+
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+
+
+

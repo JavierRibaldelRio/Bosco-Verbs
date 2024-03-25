@@ -1,10 +1,17 @@
 import React from "react";
+import IrregularVerbs from "../data/Irregular-Verbs.json";
+import TablaVerbos from "../components/TablaVerbos";
 
 function VerbsList(props){
 
-    return <h1 id="titulo-seccion">Irregular Verbs List</h1>
 
+    return <div>
+            <h1 id="titulo-seccion">Irregular Verbs List</h1>
 
+            <TablaVerbos irregularVerbs={IrregularVerbs}/>
+            
+
+        </div>  
 
 
 }
