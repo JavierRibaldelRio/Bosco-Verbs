@@ -8,10 +8,10 @@ import reportWebVitals from './reportWebVitals';
 // Boostrap y Bootswach
 import "bootswatch/dist/lumen/bootstrap.min.css";
 
-//
 
 // Componentes
 import VerbsList from './pages/Verbs-List';
+import TestGenerator from './pages/Test-Generator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +21,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path='/verb-list' element={<VerbsList />} />
+          <Route path='/test-generator' element={<TestGenerator />} />
         </Routes>
       </BrowserRouter>
     </main>
