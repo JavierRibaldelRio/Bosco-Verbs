@@ -8,22 +8,22 @@ function TablaVerbos(props) {
     const tableContent = props.irregularVerbs
         .map((x, i) => {
             return <tr>
-                <td>{i + 1}</td>
+                <td scope="row">{i + 1}</td>
                 <td>{x[0]}</td>
                 <td>{x[1]}</td>
                 <td>{x[2]}</td>
-                <td>{x[3]}</td>
+                <td>{x[3].join(', ')}</td>
             </tr>
         });
 
-    return <table id="Tabla-IV">
-        <thead>
+    return <table id="Tabla-IV" className="table-striped table">
+        <thead className="table-dark">
             <tr>
-                <th>Nº</th>
-                <th>Infinitive</th>
-                <th>Past Simple</th>
-                <th>Past Participle</th>
-                <th>Spanish Translation</th>
+                <th scope="col" >Nº</th>
+                <th scope="col" >Infinitive</th>
+                <th scope="col" >Past Simple</th>
+                <th scope="col" >Past Participle</th>
+                <th scope="col" >Spanish Translation</th>
             </tr>
         </thead>
 
