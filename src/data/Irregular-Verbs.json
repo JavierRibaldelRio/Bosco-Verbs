@@ -170,7 +170,8 @@
         "Dealt",
         "Dealt",
         [
-            "Tratar", "Repartir"
+            "Tratar",
+            "Repartir"
         ]
     ],
     [
@@ -314,7 +315,8 @@
         "Got",
         "Got",
         [
-            "Obtener","Conseguir"
+            "Obtener",
+            "Conseguir"
         ]
     ],
     [
@@ -355,7 +357,7 @@
         "Heard",
         [
             "Oír",
-             "Escuchar"
+            "Escuchar"
         ]
     ],
     [
@@ -379,7 +381,9 @@
         "Held",
         "Held",
         [
-            "Sostener","Abrazar", "Celebrar"
+            "Sostener",
+            "Abrazar",
+            "Celebrar"
         ]
     ],
     [
@@ -403,7 +407,8 @@
         "Knew",
         "Known",
         [
-            "Saber","Conocer"
+            "Saber",
+            "Conocer"
         ]
     ],
     [
@@ -411,7 +416,8 @@
         "Laid",
         "Laid",
         [
-            "Poner","Colocar"
+            "Poner",
+            "Colocar"
         ]
     ],
     [
@@ -419,7 +425,8 @@
         "Led",
         "Led",
         [
-            "Guiar","dirigir"
+            "Guiar",
+            "dirigir"
         ]
     ],
     [
@@ -435,7 +442,8 @@
         "Left",
         "Left",
         [
-            "Dejar","Abandonar"
+            "Dejar",
+            "Abandonar"
         ]
     ],
     [
@@ -451,7 +459,8 @@
         "Let",
         "Let",
         [
-            "Dejar","Conceder"
+            "Dejar",
+            "Conceder"
         ]
     ],
     [
@@ -491,7 +500,8 @@
         "Meant",
         "Meant",
         [
-            "Querer decir" , "Significar"
+            "Querer decir",
+            "Significar"
         ]
     ],
     [
@@ -499,7 +509,8 @@
         "Met",
         "Met",
         [
-            "Reunirse","Encontrarse con"
+            "Reunirse",
+            "Encontrarse con"
         ]
     ],
     [
@@ -539,7 +550,8 @@
         "Rode",
         "Ridden",
         [
-            "Montar","Cabalgar"
+            "Montar",
+            "Cabalgar"
         ]
     ],
     [
@@ -547,7 +559,8 @@
         "Rang",
         "Rung",
         [
-            "Llamar","Sonar un timbre"
+            "Llamar",
+            "Sonar un timbre"
         ]
     ],
     [
@@ -603,7 +616,9 @@
         "Shook",
         "Shaken",
         [
-            "Sacudir", "Temblar", "Agitar"
+            "Sacudir",
+            "Temblar",
+            "Agitar"
         ]
     ],
     [
@@ -627,7 +642,8 @@
         "Showed",
         "Shown",
         [
-            "Mostrar","Demostrar"
+            "Mostrar",
+            "Demostrar"
         ]
     ],
     [
@@ -691,7 +707,8 @@
         "Spelt",
         "Spelt",
         [
-            "Deletrear","Embrujar"
+            "Deletrear",
+            "Embrujar"
         ]
     ],
     [
@@ -771,7 +788,8 @@
         "Tore",
         "Torn",
         [
-            "Romper","Desgarrar"
+            "Romper",
+            "Desgarrar"
         ]
     ],
     [
@@ -795,7 +813,8 @@
         "Threw",
         "Thrown",
         [
-            "Lanzar","Tirar"
+            "Lanzar",
+            "Tirar"
         ]
     ],
     [
