@@ -12,7 +12,7 @@ function TablaVerbos(props) {
                 <td>{x[0]}</td>
                 <td>{x[1]}</td>
                 <td>{x[2]}</td>
-                <td>{x[3].join(', ')}</td>
+                <td>{x[3]}</td>
             </tr>
         });
 

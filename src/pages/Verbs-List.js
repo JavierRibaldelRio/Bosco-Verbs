@@ -1,5 +1,5 @@
 import React from "react";
-import IrregularVerbs from "../data/Irregular-Verbs.json";
+import IrregularVerbs from "../data/Irregular-Verbs-String.json";
 import TablaVerbos from "../components/TablaVerbos";
 
 function VerbsList(props){
