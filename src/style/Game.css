@@ -1,0 +1,22 @@
+#Game-Area{
+
+    background-color: blue;
+    height: 85vh;
+}
+
+/* Input */
+.input-verbo{
+    width: 10vw;
+    text-align: center;
+}
+
+.Tiempo-Label{
+
+    font-size: 4vmin;
+}
+
+
+/* Barra inferior */
+#Marcadores{
+    background-color: grey;
+}

@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './style/index.css';
+import './style/App.css';
 import reportWebVitals from './reportWebVitals';
 
 // Boostrap y Bootswach
@@ -12,6 +13,7 @@ import "bootswatch/dist/lumen/bootstrap.min.css";
 // Componentes
 import VerbsList from './pages/Verbs-List';
 import TestGenerator from './pages/Test-Generator';
+import IrregularVerbsGame from './pages/Irregular-Verbs-Game';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +24,7 @@ root.render(
         <Routes>
           <Route path='/verb-list' element={<VerbsList />} />
           <Route path='/test-generator' element={<TestGenerator />} />
+          <Route path='/game' element={<IrregularVerbsGame />} />
         </Routes>
       </BrowserRouter>
     </main>
