@@ -3,7 +3,7 @@ function createGaps(verbsArr) {
 
     // Empty
 
-    const emptyVerb = Array(4);
+    const emptyVerb = ['', '', '', ''];
 
     // Index of the hint
     let hintIndex = 0;
