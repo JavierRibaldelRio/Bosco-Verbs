@@ -1,3 +1,7 @@
+// Boostrap y Bootswach
+import "bootswatch/dist/lumen/bootstrap.min.css";
+
+
 // Importa React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -6,8 +10,7 @@ import './style/index.css';
 import './style/App.css';
 import reportWebVitals from './reportWebVitals';
 
-// Boostrap y Bootswach
-import "bootswatch/dist/lumen/bootstrap.min.css";
+
 
 
 // Componentes
@@ -18,7 +21,6 @@ import IrregularVerbsGame from './pages/Irregular-Verbs-Game';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <main>
       <BrowserRouter>
         <Routes>
