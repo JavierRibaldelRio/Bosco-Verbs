@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+header {
+  max-height: 5vh;
+}
+
+#Img-Departamento {
+  max-height: 5vh;
+  width: auto;
+}
+
+main {
+
+  margin-top: 12vh !important;
+
+  min-height: 70vh;
+
+  margin: 8vmin;
+}
+
+h1 {
+  margin: 2vmax 8vmin 8vmin 8vmin;
+}
+
+.opcion {
+  margin: 5vmin 0;
+}
+
+.Nav-Link {
+  font-size: large;
+}

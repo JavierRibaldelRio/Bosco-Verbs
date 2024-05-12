@@ -1,26 +1,53 @@
 {
-  "name": "irregular-verbs-test-generator",
-  "version": "1.0.0",
-  "description": "A Javascript app to create English irregular verbs tests to be filled in with a pencil",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator.git"
-  },
-  "author": "Javier Ribal del Rio",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator/issues"
-  },
-  "homepage": "https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator#readme",
+  "name": "irregular-verbs-test-tool",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "fs": "^0.0.1-security",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
+    "bootswatch": "^5.3.3",
+    "firebase": "^10.11.1",
     "jspdf": "^2.5.1",
-    "jspdf-autotable": "^3.6.0"
+    "jspdf-autotable": "^3.8.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

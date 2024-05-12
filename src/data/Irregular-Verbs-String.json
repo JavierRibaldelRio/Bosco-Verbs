@@ -1,0 +1,626 @@
+[
+    [
+        "To Awake",
+        "Awoke",
+        "Awoken",
+        "Despertarse"
+    ],
+    [
+        "To Be",
+        "Was/were",
+        "Been",
+        "Ser, Estar"
+    ],
+    [
+        "To Beat",
+        "Beat",
+        "Beaten",
+        "Golpear"
+    ],
+    [
+        "To Become",
+        "Became",
+        "Become",
+        "Llegar a ser, Convertirse"
+    ],
+    [
+        "To Begin",
+        "Began",
+        "Begun",
+        "Empezar"
+    ],
+    [
+        "To Bend",
+        "Bent",
+        "Bent",
+        "Doblar"
+    ],
+    [
+        "To Bite",
+        "Bit",
+        "Bitten",
+        "Morder"
+    ],
+    [
+        "To Bleed",
+        "Bled",
+        "Bled",
+        "Sangrar"
+    ],
+    [
+        "To Blow",
+        "Blew",
+        "Blown",
+        "Soplar"
+    ],
+    [
+        "To Break",
+        "Broke",
+        "Broken",
+        "Romper"
+    ],
+    [
+        "To Bring",
+        "Brought",
+        "Brought",
+        "Traer"
+    ],
+    [
+        "To Build",
+        "Built",
+        "Built",
+        "Construir"
+    ],
+    [
+        "To Burn",
+        "Burnt",
+        "Burnt",
+        "Quemar"
+    ],
+    [
+        "To Buy",
+        "Bought",
+        "Bought",
+        "Comprar"
+    ],
+    [
+        "Can",
+        "Could",
+        "Been able",
+        "Poder"
+    ],
+    [
+        "To Catch",
+        "Caught",
+        "Caught",
+        "Coger, Agarrar"
+    ],
+    [
+        "To Choose",
+        "Chose",
+        "Chosen",
+        "Escoger, Elegir"
+    ],
+    [
+        "To Come",
+        "Came",
+        "Come",
+        "Venir"
+    ],
+    [
+        "To Cost",
+        "Cost",
+        "Cost",
+        "Costar"
+    ],
+    [
+        "To Cut",
+        "Cut",
+        "Cut",
+        "Cortar"
+    ],
+    [
+        "To Deal",
+        "Dealt",
+        "Dealt",
+        "Tratar, Repartir"
+    ],
+    [
+        "To Dig",
+        "Dug",
+        "Dug",
+        "Cavar"
+    ],
+    [
+        "To Do",
+        "Did",
+        "Done",
+        "Hacer"
+    ],
+    [
+        "To Draw",
+        "Drew",
+        "Drawn",
+        "Dibujar"
+    ],
+    [
+        "To Dream",
+        "Dreamt",
+        "Dreamt",
+        "Soñar"
+    ],
+    [
+        "To Drink",
+        "Drank",
+        "Drunk",
+        "Beber"
+    ],
+    [
+        "To Drive",
+        "Drove",
+        "Driven",
+        "Conducir"
+    ],
+    [
+        "To Eat",
+        "Ate",
+        "Eaten",
+        "Comer"
+    ],
+    [
+        "To Fall",
+        "Fell",
+        "Fallen",
+        "Caer"
+    ],
+    [
+        "To Feed",
+        "Fed",
+        "Fed",
+        "Alimentar"
+    ],
+    [
+        "To Feel",
+        "Felt",
+        "Felt",
+        "Sentir"
+    ],
+    [
+        "To Fight",
+        "Fought",
+        "Fought",
+        "Luchar"
+    ],
+    [
+        "To Find",
+        "Found",
+        "Found",
+        "Encontrar"
+    ],
+    [
+        "To Fly",
+        "Flew",
+        "Flown",
+        "Volar"
+    ],
+    [
+        "To Forbid",
+        "Forbade",
+        "Forbidden",
+        "Prohibir"
+    ],
+    [
+        "To Forget",
+        "Forgot",
+        "Forgotten",
+        "Olvidar"
+    ],
+    [
+        "To Forgive",
+        "Forgave",
+        "Forgiven",
+        "Perdonar"
+    ],
+    [
+        "To Freeze",
+        "Froze",
+        "Frozen",
+        "Congelar"
+    ],
+    [
+        "To Get",
+        "Got",
+        "Got",
+        "Obtener, Conseguir"
+    ],
+    [
+        "To Give",
+        "Gave",
+        "Given",
+        "Dar"
+    ],
+    [
+        "To Go",
+        "Went",
+        "Gone",
+        "Ir"
+    ],
+    [
+        "To Grow",
+        "Grew",
+        "Grown",
+        "Crecer"
+    ],
+    [
+        "To Have",
+        "Had",
+        "Had",
+        "Tener"
+    ],
+    [
+        "To Hear",
+        "Heard",
+        "Heard",
+        "Oír, Escuchar"
+    ],
+    [
+        "To Hide",
+        "Hid",
+        "Hidden",
+        "Esconder"
+    ],
+    [
+        "To Hit",
+        "Hit",
+        "Hit",
+        "Golpear"
+    ],
+    [
+        "To Hold",
+        "Held",
+        "Held",
+        "Sostener, Abrazar, Celebrar"
+    ],
+    [
+        "To Hurt",
+        "Hurt",
+        "Hurt",
+        "Herir"
+    ],
+    [
+        "To Keep",
+        "Kept",
+        "Kept",
+        "Guardar"
+    ],
+    [
+        "To Know",
+        "Knew",
+        "Known",
+        "Saber, Conocer"
+    ],
+    [
+        "To Lay",
+        "Laid",
+        "Laid",
+        "Poner, Colocar"
+    ],
+    [
+        "To Lead",
+        "Led",
+        "Led",
+        "Guiar, dirigir"
+    ],
+    [
+        "To Learn",
+        "Learnt",
+        "Learnt",
+        "Aprender"
+    ],
+    [
+        "To Leave",
+        "Left",
+        "Left",
+        "Dejar, Abandonar"
+    ],
+    [
+        "To Lend",
+        "Lent",
+        "Lent",
+        "Prestar"
+    ],
+    [
+        "To Let",
+        "Let",
+        "Let",
+        "Dejar, Conceder"
+    ],
+    [
+        "To Lie",
+        "Lay",
+        "Lain",
+        "Tumbarse"
+    ],
+    [
+        "To Light",
+        "Lit",
+        "Lit",
+        "Encender"
+    ],
+    [
+        "To Lose",
+        "Lost",
+        "Lost",
+        "Perder"
+    ],
+    [
+        "To Make",
+        "Made",
+        "Made",
+        "Hacer"
+    ],
+    [
+        "To Mean",
+        "Meant",
+        "Meant",
+        "Querer decir, Significar"
+    ],
+    [
+        "To Meet",
+        "Met",
+        "Met",
+        "Reunirse, Encontrarse con"
+    ],
+    [
+        "To Pay",
+        "Paid",
+        "Paid",
+        "Pagar"
+    ],
+    [
+        "To Prove",
+        "Proved",
+        "Proved/proven",
+        "Probar"
+    ],
+    [
+        "To Put",
+        "Put",
+        "Put",
+        "Poner"
+    ],
+    [
+        "To Read",
+        "Read",
+        "Read",
+        "Leer"
+    ],
+    [
+        "To Ride",
+        "Rode",
+        "Ridden",
+        "Montar, Cabalgar"
+    ],
+    [
+        "To Ring",
+        "Rang",
+        "Rung",
+        "Llamar, Sonar un timbre"
+    ],
+    [
+        "To Rise",
+        "Rose",
+        "Risen",
+        "Levantar"
+    ],
+    [
+        "To Run",
+        "Ran",
+        "Run",
+        "Correr"
+    ],
+    [
+        "To Say",
+        "Said",
+        "Said",
+        "Decir"
+    ],
+    [
+        "To See",
+        "Saw",
+        "Seen",
+        "Ver"
+    ],
+    [
+        "To Sell",
+        "Sold",
+        "Sold",
+        "Vender"
+    ],
+    [
+        "To Send",
+        "Sent",
+        "Sent",
+        "Enviar"
+    ],
+    [
+        "To Shake",
+        "Shook",
+        "Shaken",
+        "Sacudir, Temblar, Agitar"
+    ],
+    [
+        "To Shine",
+        "Shone",
+        "Shone",
+        "Brillar"
+    ],
+    [
+        "To Shoot",
+        "Shot",
+        "Shot",
+        "Disparar"
+    ],
+    [
+        "To Show",
+        "Showed",
+        "Shown",
+        "Mostrar, Demostrar"
+    ],
+    [
+        "To Shut",
+        "Shut",
+        "Shut",
+        "Cerrar"
+    ],
+    [
+        "To Sing",
+        "Sang",
+        "Sung",
+        "Cantar"
+    ],
+    [
+        "To Sink",
+        "Sank",
+        "Sunk",
+        "Hundirse"
+    ],
+    [
+        "To Sit",
+        "Sat",
+        "Sat",
+        "Sentarse"
+    ],
+    [
+        "To Sleep",
+        "Slept",
+        "Slept",
+        "Dormir"
+    ],
+    [
+        "To Smell",
+        "Smelt",
+        "Smelt",
+        "Oler"
+    ],
+    [
+        "To Speak",
+        "Spoke",
+        "Spoken",
+        "Hablar"
+    ],
+    [
+        "To Spell",
+        "Spelt",
+        "Spelt",
+        "Deletrear, Embrujar"
+    ],
+    [
+        "To Spend",
+        "Spent",
+        "Spent",
+        "Gastar"
+    ],
+    [
+        "To Stand",
+        "Stood",
+        "Stood",
+        "Estar de pie"
+    ],
+    [
+        "To Steal",
+        "Stole",
+        "Stolen",
+        "Robar"
+    ],
+    [
+        "To Stick",
+        "Stuck",
+        "Stuck",
+        "Pegar"
+    ],
+    [
+        "To Stink",
+        "Stunk/stank",
+        "Stunk",
+        "Apestar"
+    ],
+    [
+        "To Swear",
+        "Swore",
+        "Sworn",
+        "Jurar"
+    ],
+    [
+        "To Swim",
+        "Swam",
+        "Swum",
+        "Nadar"
+    ],
+    [
+        "To Take",
+        "Took",
+        "Taken",
+        "Coger"
+    ],
+    [
+        "To Teach",
+        "Taught",
+        "Taught",
+        "Enseñar"
+    ],
+    [
+        "To Tear",
+        "Tore",
+        "Torn",
+        "Romper, Desgarrar"
+    ],
+    [
+        "To Tell",
+        "Told",
+        "Told",
+        "Decir"
+    ],
+    [
+        "To Think",
+        "Thought",
+        "Thought",
+        "Pensar"
+    ],
+    [
+        "To Throw",
+        "Threw",
+        "Thrown",
+        "Lanzar, Tirar"
+    ],
+    [
+        "To Understand",
+        "Understood",
+        "Understood",
+        "Entender"
+    ],
+    [
+        "To Wake",
+        "Woke",
+        "Woken",
+        "Despertarse"
+    ],
+    [
+        "To Wear",
+        "Wore",
+        "Worn",
+        "Llevar puesto"
+    ],
+    [
+        "To Win",
+        "Won",
+        "Won",
+        "Ganar"
+    ],
+    [
+        "To Write",
+        "Wrote",
+        "Written",
+        "Escribir"
+    ]
+]

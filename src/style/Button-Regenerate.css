@@ -1,0 +1,16 @@
+.transition {
+  background-position: left bottom !important;
+  color: white !important;
+
+}
+
+
+#Button-Regenerate {
+  background: linear-gradient(to right, #28b62c 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  color: #28b62c;
+
+  margin: 5vmax;
+}
