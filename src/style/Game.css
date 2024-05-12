@@ -1,22 +1,32 @@
-#Game-Area{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-    background-color: blue;
-    height: 85vh;
-}
+#Game-Area {}
 
 /* Input */
-.input-verbo{
-    width: 10vw;
+.input-verbo::placeholder {
+
+    font-weight: 900;
+    color: rgb(170, 170, 170);
+}
+
+
+.input-verbo-group {
+
+    padding: 4vmin;
     text-align: center;
 }
 
-.Tiempo-Label{
-
+.Tiempo-Label {
     font-size: 4vmin;
 }
 
+#Marcadores {
 
-/* Barra inferior */
-#Marcadores{
-    background-color: grey;
+    font-size: 5vmin;
+    margin: 5vmax 0;
+}
+
+.Cronometro-Label {
+    font-family: "Orbitron", sans-serif;
+
 }

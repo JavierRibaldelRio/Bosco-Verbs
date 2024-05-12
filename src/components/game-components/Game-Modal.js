@@ -29,7 +29,7 @@ function GameModal(props) {
                 {props.content}
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={handleClick}>Play Again <FontAwesomeIcon icon={faRotateRight} /></Button>
+                <Button variant={"success"} onClick={handleClick}>Play Again <FontAwesomeIcon icon={faRotateRight} /></Button>
             </Modal.Footer>
         </Modal>
     );

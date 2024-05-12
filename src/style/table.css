@@ -1,25 +1,29 @@
-#Tabla-IV{
+#Tabla-IV {
     border: solid 1px black;
 
-    max-height: 75vh;
+    max-height: 70vh;
     max-width: 50vw;
 
     margin: auto;
 
 }
 
-#Tabla-IV tbody th, #Tabla-IV td{
-    padding:1vmin;
+#Tabla-IV tbody th,
+#Tabla-IV td {
+    padding: 1vmin;
 }
 
-#Tabla-IV tbody{
+#Tabla-IV tbody {
     overflow-y: scroll;
+    overflow-x: auto;
     display: block;
-    height: 75vh;
+    min-width: 100px !important;
+    height: 70vh;
 
 }
 
-thead, tbody tr {
+thead,
+tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;

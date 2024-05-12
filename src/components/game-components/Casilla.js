@@ -8,9 +8,17 @@ function Casilla(props) {
 
 
     return <Col>
-        <Form.Group className="mb-3" >
+        <Form.Group className="mb-3 input-verbo-group focus">
             <Form.Label className="Tiempo-Label">{props.tituloTiempo}</Form.Label>
-            <Form.Control size="lg" type="text" name={props.tiempo} placeholder={props.verb} value={props.answer} onChange={props.handleChange} disabled={!props.isRunning} />
+
+            <Form.Control size="lg" type="text" className="input-verbo"
+                name={props.tiempo}
+                placeholder={props.verb}
+                value={props.answer}
+                onChange={props.handleChange}
+                disabled={!props.isRunning}
+                required={props.isRunning}
+                autoComplete="off" />
         </Form.Group>
     </Col>
 }

@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+header {
+  max-height: 5vh;
+}
+
+#Img-Departamento {
+  max-height: 5vh;
+  width: auto;
+}
+
+main {
+
+  margin-top: 12vh !important;
+
+  min-height: 70vh;
+
+  margin: 8vmin;
+}
+
+h1 {
+  margin: 2vmax 8vmin 8vmin 8vmin;
+}
+
+.opcion {
+  margin: 5vmin 0;
+}

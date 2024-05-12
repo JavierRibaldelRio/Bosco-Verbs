@@ -10,7 +10,7 @@ function BarraPuntos(props) {
 
     return <Row id="Marcadores">
         <Col style={{ textAlign: "left" }}>Points: {props.puntos}</Col>
-        <Col style={{ textAlign: "center" }}>{formatTime(props.time)}</Col>
+        <Col style={{ textAlign: "center" }} className="Cronometro-Label">{formatTime(props.time)}</Col>
         <Col style={{ textAlign: "right" }}>Lives left: {props.vidas}</Col>
     </Row>
 }

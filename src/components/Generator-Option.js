@@ -11,17 +11,17 @@ import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons'
 
 function GeneratorOption(props) {
 
-    const generateExamEmpty = () =>{props.generateExam(props.number)};
-    const generateExamFull = () =>{props.generateExam(props.number,true)};
+    const generateExamEmpty = () => { props.generateExam(props.number) };
+    const generateExamFull = () => { props.generateExam(props.number, true) };
 
-    return <Col className="text-center">
+    return <Col className="text-center opcion">
 
 
-        <h2>{props.texto}</h2>     
+        <h2>{props.texto}</h2>
 
         <ButtonGroup aria-label={props.ariaLabel}>
-            <Button variant="danger" onClick={generateExamEmpty}> <FontAwesomeIcon icon={faFilePdf}/> PDF Test</Button>
-            <Button variant="primary" onClick={generateExamFull}>PDF Answer <FontAwesomeIcon icon={faEye}/></Button>
+            <Button variant="danger" onClick={generateExamEmpty}> <FontAwesomeIcon icon={faFilePdf} /> PDF Test</Button>
+            <Button variant="primary" onClick={generateExamFull}>PDF Answer <FontAwesomeIcon icon={faEye} /></Button>
         </ButtonGroup>
 
     </Col>

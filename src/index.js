@@ -10,17 +10,17 @@ import './style/index.css';
 import './style/App.css';
 import reportWebVitals from './reportWebVitals';
 
-
-
-
 // Componentes
 import VerbsList from './pages/Verbs-List';
 import TestGenerator from './pages/Test-Generator';
 import IrregularVerbsGame from './pages/Irregular-Verbs-Game';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header />
     <main>
       <BrowserRouter>
         <Routes>
@@ -30,6 +30,7 @@ root.render(
         </Routes>
       </BrowserRouter>
     </main>
+    <Footer />
   </React.StrictMode>
 );
 

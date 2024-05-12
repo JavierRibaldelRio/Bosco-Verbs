@@ -165,10 +165,12 @@ function Game(props) {
     return <Form onSubmit={handleSubmit}>
         <Container id='Game-Area' fluid>
 
+            <p>Remember, that you must type always the 4 four verbs, including the one given </p>
+
             <CasillasVerbs verb={hint} handleChangeInput={handleChange} respuesta={respuesta} isRunning={isRunning} />
 
             <div className='text-center'>
-                <Button variant="primary" type="submit">{buttonText}</Button>
+                <Button variant="success" type="submit">{buttonText}</Button>
             </div>
 
             <BarraPuntos puntos={puntos} vidas={vidas} time={time} />
