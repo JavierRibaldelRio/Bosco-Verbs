@@ -1,6 +1,5 @@
 import Row from 'react-bootstrap/Row';
 import Casilla from './Casilla';
-import { useEffect } from 'react';
 
 function CasillasVerbs(props) {
 
@@ -12,9 +11,6 @@ function CasillasVerbs(props) {
         <Casilla answer={props.respuesta.spanish} verb={props.verb[3]} tiempo="spanish" tituloTiempo="Translation" handleChange={props.handleChangeInput} isRunning={props.isRunning} />
 
     </Row>
-}
-
-CasillasVerbs.defaultProps = {
 }
 
 export default CasillasVerbs;
