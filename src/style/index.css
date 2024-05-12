@@ -39,3 +39,7 @@ h1 {
 .opcion {
   margin: 5vmin 0;
 }
+
+.Nav-Link {
+  font-size: large;
+}

@@ -1,13 +1,11 @@
 // Boostrap y Bootswach
 import "bootswatch/dist/lumen/bootstrap.min.css";
 
-
 // Importa React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './style/index.css';
-import './style/App.css';
 import reportWebVitals from './reportWebVitals';
 
 // Componentes

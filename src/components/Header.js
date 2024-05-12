@@ -25,9 +25,9 @@ function Header() {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link href="/game">Game</Nav.Link>
-                        <Nav.Link href="/test-generator">Test Generator</Nav.Link>
-                        <Nav.Link href="/verb-list">Verb List</Nav.Link>
+                        <Nav.Link className="Nav-Link" href="/game">Game</Nav.Link>
+                        <Nav.Link className="Nav-Link" href="/test-generator">Test Generator</Nav.Link>
+                        <Nav.Link className="Nav-Link" href="/verb-list">Verb List</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
