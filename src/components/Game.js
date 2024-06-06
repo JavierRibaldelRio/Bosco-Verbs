@@ -118,7 +118,7 @@ function Game(props) {
 
             if (position === verbs.length - 1) {
 
-                endGame({ show: true, header: "Congratulations, you have won", content: <>Congratulations, you have completed the game with {puntos + 1} points in {formatTime(time)} .</> });
+                endGame({ show: true, header: "Congratulations, you have won", content: <>Congratulations, you have completed the game with {puntos + 1} points in {formatTime(time)}.</> });
             }
 
             else {
