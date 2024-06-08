@@ -43,3 +43,15 @@ h1 {
 .Nav-Link {
   font-size: large;
 }
+
+/* un formated link*/
+.unformated-a {
+
+  color: auto;
+  text-decoration: none;
+}
+
+.download-button {
+
+  margin: 4vmin;
+}
