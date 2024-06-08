@@ -51,6 +51,9 @@ function Game(props) {
     // The answer
     const [respuesta, setRespuesta] = useState(initialAnswers);
 
+    // The status of the game (if is a normal verb or is it the correction)
+    const [correcting, setCorrecting] = useState(false);
+
     //The timer
     const [time, setTime] = useState(0);
     // Referencia del tiempo
@@ -72,6 +75,8 @@ function Game(props) {
 
         // Formats the answers
         function formatString(str) {
+
+            console.log('str :>> ', str);
             return str.trim().toLowerCase();
         }
 
@@ -112,6 +117,7 @@ function Game(props) {
     }
 
     const correct = () => {
+        //It is correct
         if (compareAnswers(respuesta, [...verbs[position]])) {
 
             setPuntos(puntos + 1);
@@ -125,8 +131,11 @@ function Game(props) {
                 setHint(emptyVerbs[position + 1])
                 setPosition(position + 1);
             }
+
+            setCorrecting(false);
         }
 
+        //it isn't
         else {
             setVidas(vidas - 1);
             setPuntos(puntos - 1);
@@ -138,6 +147,8 @@ function Game(props) {
             if (vidas === 1) {
                 endGame({ show: true, header: 'GAME OVER', content: <>The game is over, you have got {puntos} points in {formatTime(time)}.</> });
             }
+
+            setCorrecting(true);
         }
 
         // Ereases the content of the inputs
@@ -161,13 +172,13 @@ function Game(props) {
         }
     }
 
-    let buttonText = !isRunning ? "Start" : "Correct";
+    let buttonText = !isRunning ? "Start" : "Validate";
     return <Form onSubmit={handleSubmit}>
         <Container id='Game-Area' fluid>
 
             <p>Remember, that you must type always the 4 four verbs, including the one given </p>
 
-            <CasillasVerbs verb={hint} handleChangeInput={handleChange} respuesta={respuesta} isRunning={isRunning} />
+            <CasillasVerbs verb={hint} handleChangeInput={handleChange} respuesta={respuesta} isRunning={isRunning} correcting={correcting} />
 
             <div className='text-center'>
                 <Button variant="success" type="submit">{buttonText}</Button>

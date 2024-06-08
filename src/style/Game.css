@@ -9,9 +9,11 @@
     color: rgb(170, 170, 170);
 }
 
+.input-verbo {
+    border: 2px solid;
+}
 
 .input-verbo-group {
-
     padding: 4vmin;
     text-align: center;
 }
@@ -22,7 +24,7 @@
 
 #Marcadores {
 
-    font-size: 5vmin;
+    font-size: 4vmin;
     margin: 5vmax 0;
 }
 
