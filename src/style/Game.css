@@ -23,9 +23,12 @@
 }
 
 #Marcadores {
-
     font-size: 4vmin;
     margin: 5vmax 0;
+}
+
+#Marcadores * {
+    text-align: center;
 }
 
 .Cronometro-Label {

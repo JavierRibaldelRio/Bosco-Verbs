@@ -8,7 +8,7 @@ import React, { useState, useRef } from 'react';
 
 // Components
 import CasillasVerbs from './game-components/Casillas-Verbs';
-import BarraPuntos from './game-components/Barra-Puntos';
+import BarraInfo from './game-components/Barra-Info';
 import GameModal from './game-components/Game-Modal';
 
 // Functions
@@ -22,6 +22,8 @@ import '../style/Game.css';
 // JSON
 import IrregularVerbs from "../data/Irregular-Verbs.json";
 
+// Almacena las vidas iniciales del usuario 
+const VIDAS_TOTALES = 3;
 
 const initialAnswers = {
 
@@ -36,7 +38,7 @@ function Game(props) {
 
     // Creates de variables to store points and lives
     const [puntos, setPuntos] = useState(0);
-    const [vidas, setVidas] = useState(3);
+    const [vidas, setVidas] = useState(VIDAS_TOTALES);
 
     // The number of verbs that are done, and the verbs
     const [position, setPosition] = useState(0);
@@ -63,12 +65,9 @@ function Game(props) {
 
     const [isRunning, setIsRunning] = useState(false);
 
-
-    // Handle Change imput of 
+    // Handle Change input  of answers
     const handleChange = (e) => {
-
         setRespuesta({ ...respuesta, [e.target.name]: e.target.value });
-
     }
 
     const compareAnswers = (userAnswer, correctAnswer) => {
@@ -100,13 +99,11 @@ function Game(props) {
             userAnswer.simple === correctAnswer[1] &&
             userAnswer.participle === correctAnswer[2] &&
             correctAnswer[3].includes(userAnswer.spanish);
-
     }
 
     const startGame = () => {
         setIsRunning(true);
         intervaloRef.current = setInterval(() => setTime((time) => time + 1), 1000);
-
     }
 
     // Ends the Game
@@ -184,7 +181,7 @@ function Game(props) {
                 <Button variant="success" type="submit">{buttonText}</Button>
             </div>
 
-            <BarraPuntos puntos={puntos} vidas={vidas} time={time} />
+            <BarraInfo puntos={puntos} vidasRestantes={vidas} vidasTotales={VIDAS_TOTALES} time={time} />
 
         </Container>
 
