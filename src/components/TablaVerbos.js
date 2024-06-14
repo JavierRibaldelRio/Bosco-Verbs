@@ -7,7 +7,7 @@ function TablaVerbos(props) {
     // Stores the content of the table
     const tableContent = props.irregularVerbs
         .map((x, i) => {
-            return <tr>
+            return <tr key={i}>
                 <td scope="row">{i + 1}</td>
                 <td>{x[0]}</td>
                 <td>{x[1]}</td>
