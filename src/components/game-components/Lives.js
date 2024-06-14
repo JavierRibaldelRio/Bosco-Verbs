@@ -7,11 +7,11 @@ function LivesMissing(props) {
     const hearts = [];
 
     for (let i = 0; i < props.vidas; i++) {
-        hearts.push(<RegularHeart />);
+        hearts.push(<RegularHeart key={i} />);
     }
 
     for (let i = 0; i < props.vidasTotales - props.vidas; i++) {
-        hearts.push(<BrokenHeart />);
+        hearts.push(<BrokenHeart key={i + props.vidas} />);
     }
 
     return <>
