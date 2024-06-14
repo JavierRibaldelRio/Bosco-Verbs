@@ -1,0 +1,21 @@
+#title-Err404 {
+
+    padding: 10vmin;
+    background-color: red;
+    color: white;
+    text-shadow: 4px 4px 2px rgb(75, 75, 75);
+    display: inline-block;
+
+    font-family: "Orbitron", sans-serif;
+
+
+
+    border-radius: 100vmin;
+
+
+
+}
+
+#title-Err404 * {
+    margin: 6vmin !important;
+}
