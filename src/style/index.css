@@ -19,7 +19,7 @@ header {
 }
 
 #Img-Departamento {
-  max-height: 5vh;
+  height: 7vh;
   width: auto;
 }
 
@@ -54,4 +54,28 @@ h1 {
 .download-button {
 
   margin: 4vmin;
+}
+
+
+#explicacion-about {
+
+  text-align: center;
+}
+
+#header-title {
+
+  margin: 0;
+  display: inline-block;
+
+  height: 4vh;
+
+  text-align: center;
+
+  font-size: 5vmin;
+}
+
+
+#iconos-about img {
+  margin: auto;
+  display: block;
 }
