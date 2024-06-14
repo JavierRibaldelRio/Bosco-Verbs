@@ -18,6 +18,8 @@ import Footer from "./components/Footer";
 // Firebase
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import About from "./pages/About";
+import Err404 from "./pages/Err404";
 
 
 
@@ -39,8 +41,6 @@ const firebaseConfig = {
 
 };
 
-console.log('firebaseConfig :>> ', firebaseConfig);
-
 // Initialize Firebase and analytics
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
@@ -55,6 +55,10 @@ root.render(
           <Route path='/verb-list' element={<VerbsList />} />
           <Route path='/test-generator' element={<TestGenerator />} />
           <Route path='/game' element={<IrregularVerbsGame />} />
+          <Route path="/" element={<About />} />
+
+          <Route path="*" element={<Err404 />} />
+
         </Routes>
       </BrowserRouter>
     </main>
