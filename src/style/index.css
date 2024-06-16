@@ -19,7 +19,7 @@ header {
 }
 
 #Img-Departamento {
-  max-height: 5vh;
+  height: 7vh;
   width: auto;
 }
 
@@ -42,4 +42,47 @@ h1 {
 
 .Nav-Link {
   font-size: large;
+}
+
+/* un formated link*/
+.unformated-a {
+
+  color: auto;
+  text-decoration: none;
+}
+
+.download-button {
+
+  margin: 4vmin;
+}
+
+
+#explicacion-about {
+
+  text-align: center;
+}
+
+#header-title {
+
+  margin: 0;
+  display: inline-block;
+
+  height: 4vh;
+
+  text-align: center;
+
+  font-size: 5vmin;
+}
+
+
+/* About */
+
+.intro {
+
+  text-align: justify;
+}
+
+#iconos-about img {
+  margin: auto;
+  display: block;
 }

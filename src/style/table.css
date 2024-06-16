@@ -2,7 +2,8 @@
     border: solid 1px black;
 
     max-height: 70vh;
-    max-width: 50vw;
+
+    width: 90vw;
 
     margin: auto;
 
@@ -17,8 +18,7 @@
     overflow-y: scroll;
     overflow-x: auto;
     display: block;
-    min-width: 100px !important;
-    height: 70vh;
+    height: 50vh;
 
 }
 
@@ -27,4 +27,13 @@ tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
+}
+
+.table-header th {
+    vertical-align: middle;
+}
+
+.numero {
+
+    width: 10%;
 }

@@ -17,8 +17,10 @@ function Header() {
                         id="Img-Departamento"
                         src="/banner.png"
                         className="d-inline-block align-top"
-                    />{'  '}
-                    Bosco-Verbs</Navbar.Brand>
+                    />{' '}
+                    <h1 id="header-title" className="d-inline-block align-top">Bosco Verbs</h1>
+
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -28,6 +30,8 @@ function Header() {
                         <Nav.Link className="Nav-Link" href="/game">Game</Nav.Link>
                         <Nav.Link className="Nav-Link" href="/test-generator">Test Generator</Nav.Link>
                         <Nav.Link className="Nav-Link" href="/verb-list">Verb List</Nav.Link>
+                        <Nav.Link className="Nav-Link" href="/">About</Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

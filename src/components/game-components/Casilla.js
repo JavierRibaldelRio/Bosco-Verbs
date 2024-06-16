@@ -11,14 +11,17 @@ function Casilla(props) {
         <Form.Group className="mb-3 input-verbo-group focus">
             <Form.Label className="Tiempo-Label">{props.tituloTiempo}</Form.Label>
 
-            <Form.Control size="lg" type="text" className="input-verbo"
+            <Form.Control size="lg" type="text"
+                className="input-verbo"
                 name={props.tiempo}
                 placeholder={props.verb}
                 value={props.answer}
                 onChange={props.handleChange}
                 disabled={!props.isRunning}
                 required={props.isRunning}
-                autoComplete="off" />
+                autoComplete="off"
+                style={{ borderColor: props.correcting ? "red" : "black" }}
+            />
         </Form.Group>
     </Col>
 }

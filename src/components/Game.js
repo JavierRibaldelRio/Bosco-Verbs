@@ -8,7 +8,7 @@ import React, { useState, useRef } from 'react';
 
 // Components
 import CasillasVerbs from './game-components/Casillas-Verbs';
-import BarraPuntos from './game-components/Barra-Puntos';
+import BarraInfo from './game-components/Barra-Info';
 import GameModal from './game-components/Game-Modal';
 
 // Functions
@@ -22,6 +22,8 @@ import '../style/Game.css';
 // JSON
 import IrregularVerbs from "../data/Irregular-Verbs.json";
 
+// Almacena las vidas iniciales del usuario 
+const VIDAS_TOTALES = 3;
 
 const initialAnswers = {
 
@@ -36,7 +38,7 @@ function Game(props) {
 
     // Creates de variables to store points and lives
     const [puntos, setPuntos] = useState(0);
-    const [vidas, setVidas] = useState(3);
+    const [vidas, setVidas] = useState(VIDAS_TOTALES);
 
     // The number of verbs that are done, and the verbs
     const [position, setPosition] = useState(0);
@@ -51,6 +53,9 @@ function Game(props) {
     // The answer
     const [respuesta, setRespuesta] = useState(initialAnswers);
 
+    // The status of the game (if is a normal verb or is it the correction)
+    const [correcting, setCorrecting] = useState(false);
+
     //The timer
     const [time, setTime] = useState(0);
     // Referencia del tiempo
@@ -60,18 +65,17 @@ function Game(props) {
 
     const [isRunning, setIsRunning] = useState(false);
 
-
-    // Handle Change imput of 
+    // Handle Change input  of answers
     const handleChange = (e) => {
-
         setRespuesta({ ...respuesta, [e.target.name]: e.target.value });
-
     }
 
     const compareAnswers = (userAnswer, correctAnswer) => {
 
         // Formats the answers
         function formatString(str) {
+
+            console.log('str :>> ', str);
             return str.trim().toLowerCase();
         }
 
@@ -95,13 +99,13 @@ function Game(props) {
             userAnswer.simple === correctAnswer[1] &&
             userAnswer.participle === correctAnswer[2] &&
             correctAnswer[3].includes(userAnswer.spanish);
-
     }
 
+
+    // Starts the game
     const startGame = () => {
         setIsRunning(true);
         intervaloRef.current = setInterval(() => setTime((time) => time + 1), 1000);
-
     }
 
     // Ends the Game
@@ -112,32 +116,51 @@ function Game(props) {
     }
 
     const correct = () => {
+        //It is correct
         if (compareAnswers(respuesta, [...verbs[position]])) {
 
             setPuntos(puntos + 1);
 
             if (position === verbs.length - 1) {
 
-                endGame({ show: true, header: "Congratulations, you have won", content: <>Congratulations, you have completed the game with {puntos + 1} points in {formatTime(time)} .</> });
+                endGame({ show: true, header: "Congratulations, you have won", content: <>Congratulations, you have completed the game with {puntos + 1} points in {formatTime(time)}.</> });
             }
 
             else {
                 setHint(emptyVerbs[position + 1])
                 setPosition(position + 1);
             }
+
+            playSound(require('../sound/Correct.wav'));
+
+
+            setCorrecting(false);
         }
 
+        //it isn't
         else {
             setVidas(vidas - 1);
             setPuntos(puntos - 1);
 
             // Fulls the empty verb to help the user to answer correctly
+
+            const correctVerb = [...verbs[position]];
+
+            // Removes all the secondary translations
+            correctVerb[3].splice(1);
+
             setHint(verbs[position]);
+
+            // Play Sound
+            playSound(require('../sound/Mistaken.wav'));
+
 
             // Chekcs if the game is ovver, because the player has used all the lives
             if (vidas === 1) {
                 endGame({ show: true, header: 'GAME OVER', content: <>The game is over, you have got {puntos} points in {formatTime(time)}.</> });
             }
+
+            setCorrecting(true);
         }
 
         // Ereases the content of the inputs
@@ -161,19 +184,25 @@ function Game(props) {
         }
     }
 
-    let buttonText = !isRunning ? "Start" : "Correct";
+    const playSound = (track) => {
+
+        const audio = new Audio(track);
+        audio.play();
+    }
+
+    let buttonText = !isRunning ? "Start" : "Validate";
     return <Form onSubmit={handleSubmit}>
         <Container id='Game-Area' fluid>
 
             <p>Remember, that you must type always the 4 four verbs, including the one given </p>
 
-            <CasillasVerbs verb={hint} handleChangeInput={handleChange} respuesta={respuesta} isRunning={isRunning} />
+            <CasillasVerbs verb={hint} handleChangeInput={handleChange} respuesta={respuesta} isRunning={isRunning} correcting={correcting} />
 
             <div className='text-center'>
                 <Button variant="success" type="submit">{buttonText}</Button>
             </div>
 
-            <BarraPuntos puntos={puntos} vidas={vidas} time={time} />
+            <BarraInfo puntos={puntos} vidasRestantes={vidas} vidasTotales={VIDAS_TOTALES} time={time} />
 
         </Container>
 
