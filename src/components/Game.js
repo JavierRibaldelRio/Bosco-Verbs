@@ -101,6 +101,8 @@ function Game(props) {
             correctAnswer[3].includes(userAnswer.spanish);
     }
 
+
+    // Starts the game
     const startGame = () => {
         setIsRunning(true);
         intervaloRef.current = setInterval(() => setTime((time) => time + 1), 1000);
@@ -129,6 +131,9 @@ function Game(props) {
                 setPosition(position + 1);
             }
 
+            playSound(require('../sound/Correct.wav'));
+
+
             setCorrecting(false);
         }
 
@@ -139,6 +144,10 @@ function Game(props) {
 
             // Fulls the empty verb to help the user to answer correctly
             setHint(verbs[position]);
+
+            // Play Sound
+            playSound(require('../sound/Mistaken.wav'));
+
 
             // Chekcs if the game is ovver, because the player has used all the lives
             if (vidas === 1) {
@@ -167,6 +176,12 @@ function Game(props) {
 
             correct();
         }
+    }
+
+    const playSound = (track) => {
+
+        const audio = new Audio(track);
+        audio.play();
     }
 
     let buttonText = !isRunning ? "Start" : "Validate";
