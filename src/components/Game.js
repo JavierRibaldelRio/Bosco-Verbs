@@ -143,6 +143,12 @@ function Game(props) {
             setPuntos(puntos - 1);
 
             // Fulls the empty verb to help the user to answer correctly
+
+            const correctVerb = [...verbs[position]];
+
+            // Removes all the secondary translations
+            correctVerb[3].splice(1);
+
             setHint(verbs[position]);
 
             // Play Sound
