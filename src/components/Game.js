@@ -119,6 +119,8 @@ function Game(props) {
         //It is correct
         if (compareAnswers(respuesta, [...verbs[position]])) {
 
+            playSound(require('../sound/Correct.wav'));
+
             setPuntos(puntos + 1);
 
             if (position === verbs.length - 1) {
@@ -131,15 +133,16 @@ function Game(props) {
                 setPosition(position + 1);
             }
 
-            playSound(require('../sound/Correct.wav'));
-
-
             setCorrecting(false);
         }
 
         //it isn't
         else {
             setVidas(vidas - 1);
+
+            // Play Sound
+            playSound(require('../sound/Mistaken.wav'));
+
             setPuntos(puntos - 1);
 
             // Fulls the empty verb to help the user to answer correctly
@@ -150,10 +153,6 @@ function Game(props) {
             correctVerb[3].splice(1);
 
             setHint(verbs[position]);
-
-            // Play Sound
-            playSound(require('../sound/Mistaken.wav'));
-
 
             // Chekcs if the game is ovver, because the player has used all the lives
             if (vidas === 1) {
