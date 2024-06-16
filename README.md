@@ -1,12 +1,12 @@
 # IRREGULAR VERBS TEST GENERATOR
 
-A Javascript app to create English irregular verbs tests to be filled in with a pencil. The test asks you for the infinitive form, past simple, past participle and also for the Spanish tranlation of the Verb
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5d158de2-b58d-421e-9069-6dd15cc672e3/deploy-status)](https://app.netlify.com/sites/bosco-verbs/deploys)
 
-|Infinitive|Past Simple|Past Participle|Spanish Tranlation|
-|--------|----------|--------|---------|
-|To sing|Sang|Sung| *Cantar*
+A React JS app to encourage learning English irregular verbs. It has different features such as test generators, a verb list, and even a game.
 
+[https://bosco-verbs.netlify.app/](https://bosco-verbs.netlify.app/)
 
+# Getting Started
 ## Prerequesites
 
 - **[Node.js: ](https://nodejs.org/)** this project requires Node.js version 20.7 or higher.
@@ -15,34 +15,39 @@ A Javascript app to create English irregular verbs tests to be filled in with a 
 
 1. **Clone the repository:**
    ```sh
-   $ git clone https://github.com/JavierRibaldelRio/Irregular-Verbs-Test-Generator.git
+   $ git clone https://github.com/JavierRibaldelRio/Bosco-Verbs.git
    ```
 
 2. **Navigate to the project directory:**
     ```sh
-    $ cd Irregular-Verbs-Test-Generator
+    $ cd Bosco-Verbs
     ``````
 3. **Install dependencies:**
     ```sh
     $ npm install
     ```
-
-## Usage
-
-1. Run on `Irregular-Vebs-Test-Generator/` directory
+4. **Start development server:**
     ```sh
     $ npm start
     ```
 
-2. Print and fill `Irregular-Verbs-Test.pdf`
-3. Check your answers with `Irregular-Verbs-Answers.pdf` 
+## Deployment
 
-You can see the format of the test in [Irregular-Verbs-Test-Sample.pdf](Irregular-Verbs-Test-Sample.pdf).
+1. Run on `Bosco-Verbs` directory
+    ```sh
+    $ npm run build
+    ```
 
 ## Build with
 -  **[Node.js](https://nodejs.org/)**
-- **[jspdf](https://github.com/parallax/jsPDF)**
-- **[jspdf-autotable](https://github.com/simonbengtsson/jsPDF-AutoTable)**
+- **[React](https://react.dev/)**
+- **[React Bootstrap](https://react-bootstrap.netlify.app/)** & **[Bootswatch](https://bootswatch.com/)** & **[Font awesome](https://fontawesome.com/)**
+
+- **[jspdf](https://github.com/parallax/jsPDF)** & **[jspdf-autotable](https://github.com/simonbengtsson/jsPDF-AutoTable)**
+
+## Authors
+
+Javier Ribal del Río - [JavierRibaldelRio](https://github.com/JavierRibaldelRio)
 
 ## License
  This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
@@ -50,4 +55,6 @@ You can see the format of the test in [Irregular-Verbs-Test-Sample.pdf](Irregula
 ## Acknowledgments
 
 - My highschool English deparment who made the list of irregular verbs 
-- My English teacher of 1st & 2nd of Bachillerato
+- My English teacher of 1st & 2nd of Bachillerato (High School)
+- My Computer Science teacher of 2nd of Bachillerato (High School)
+
