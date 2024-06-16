@@ -17,13 +17,13 @@ function TablaVerbos(props) {
         });
 
     return <table id="Tabla-IV" className="table-striped table">
-        <thead className="table-dark">
-            <tr>
-                <th scope="col" >Nº</th>
-                <th scope="col" >Infinitive</th>
-                <th scope="col" >Past Simple</th>
-                <th scope="col" >Past Participle</th>
-                <th scope="col" >Spanish Translation</th>
+        <thead className="table-success">
+            <tr className="table-header">
+                <th scope="col">Nº</th>
+                <th scope="col">Infinitive</th>
+                <th scope="col">Past Simple</th>
+                <th scope="col">Past Participle</th>
+                <th scope="col">Spanish Translation</th>
             </tr>
         </thead>
 
