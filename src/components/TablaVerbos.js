@@ -1,6 +1,8 @@
 import React from "react";
 import '../style/table.css'
 
+import { Table } from "react-bootstrap";
+
 // Shows a table with all the irregular verbs
 function TablaVerbos(props) {
 
@@ -8,7 +10,7 @@ function TablaVerbos(props) {
     const tableContent = props.irregularVerbs
         .map((x, i) => {
             return <tr key={i}>
-                <td scope="row">{i + 1}</td>
+                <td scope="row" className="numero">{i + 1}</td>
                 <td>{x[0]}</td>
                 <td>{x[1]}</td>
                 <td>{x[2]}</td>
@@ -16,10 +18,10 @@ function TablaVerbos(props) {
             </tr>
         });
 
-    return <table id="Tabla-IV" className="table-striped table">
+    return <Table id="Tabla-IV" striped responsive="lg">
         <thead className="table-success">
             <tr className="table-header">
-                <th scope="col">Nº</th>
+                <th scope="col" className="numero">Nº</th>
                 <th scope="col">Infinitive</th>
                 <th scope="col">Past Simple</th>
                 <th scope="col">Past Participle</th>
@@ -32,7 +34,7 @@ function TablaVerbos(props) {
         </tbody>
 
 
-    </table>;
+    </Table>;
 }
 
 export default TablaVerbos;
